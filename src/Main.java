@@ -6,13 +6,12 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Gimnasio FitMar v2.0");
 
-
         List<Tarifa> socios = new ArrayList<>();
         socios.add(new TarifaBasica("S-101", 30));
         socios.add(new TarifaPremium("S-102", 45));
         socios.add(new TarifaPiscina("S-103", 35));
 
-        int meses = 3;
+        int meses = 12;
         double total = 0;
         for (Tarifa t : socios) {
             double precio = t.precioCuota(meses);
