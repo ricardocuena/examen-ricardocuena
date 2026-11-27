@@ -9,6 +9,7 @@ public class Main {
         List<Tarifa> socios = new ArrayList<>();
         socios.add(new TarifaBasica("S-101", 30));
         socios.add(new TarifaPremium("S-102", 45));
+        socios.add(new TarifaPiscina("S-103", 35));
 
         int meses = 3;
         double total = 0;
